@@ -11,9 +11,6 @@ importers:
       astro:
         specifier: ^5.15.1
         version: 5.15.1(@types/node@24.9.1)(rollup@4.52.5)(typescript@5.9.3)
-      gsap:
-        specifier: ^3.12.2
-        version: 3.12.2
 
 packages:
 
@@ -760,9 +757,6 @@ packages:
 
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
-
-  gsap@3.12.2:
-    resolution: {integrity: sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ==}
 
   h3@1.15.4:
     resolution: {integrity: sha512-z5cFQWDffyOe4vQ9xIqNfCZdV4p//vy6fBnr8Q1AWnVZ0teurKMG66rLj++TKwKPUP3u7iMUvrvKaEUiQw2QWQ==}
@@ -2134,8 +2128,6 @@ snapshots:
   get-east-asian-width@1.4.0: {}
 
   github-slugger@2.0.0: {}
-
-  gsap@3.12.2: {}
 
   h3@1.15.4:
     dependencies:
