@@ -1,0 +1,46 @@
+---
+interface Props {
+  tenure: string;
+}
+const { tenure } = Astro.props;
+---
+<div class="card card--role" id="experience">
+  <span class="eyebrow">CURRENTLY AT</span>
+  <div class="role-badge">EPAM</div>
+  <h3>Lead Software Engineer</h3>
+  <p class="role-company">EPAM Systems</p>
+  <p class="role-period">Oct 2024 — Present · {tenure}</p>
+  <a href="#experience-full" class="card-arrow" aria-label="View experience">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+<style>
+  .role-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--surface-2);
+    border: 1px solid var(--border-hover);
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .role-company {
+    font-size: 0.8rem;
+    color: var(--muted-text);
+    margin-top: -0.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .role-period {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+</style>

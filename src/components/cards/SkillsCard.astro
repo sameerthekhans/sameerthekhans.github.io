@@ -1,0 +1,59 @@
+---
+---
+<div class="card card--skills" id="skills">
+  <span class="eyebrow">SPECIALIZATION</span>
+  <h3>Tech Skills</h3>
+  <div class="tags">
+    <span class="tag tag--primary">Angular</span>
+    <span class="tag tag--primary">Node.js</span>
+    <span class="tag tag--primary">TypeScript</span>
+    <span class="tag tag--primary">AWS</span>
+    <span class="tag">Express.js</span>
+    <span class="tag">MongoDB</span>
+    <span class="tag">RxJS</span>
+    <span class="tag">NGXS / NGRX</span>
+    <span class="tag">Web Components</span>
+    <span class="tag">Cypress</span>
+    <span class="tag">Playwright</span>
+    <span class="tag">Jest</span>
+    <span class="tag">React</span>
+    <span class="tag">Firebase</span>
+    <span class="tag">SQL</span>
+    <span class="tag">Git</span>
+    <span class="tag">Figma</span>
+  </div>
+</div>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.25rem;
+  }
+
+  .tag {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.3rem 0.65rem;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--muted-text);
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .card:hover .tag { border-color: var(--border-hover); }
+
+  .tag--primary {
+    border-color: rgba(0, 229, 255, 0.25);
+    color: var(--accent);
+    background: rgba(0, 229, 255, 0.05);
+  }
+
+  :global([data-theme="light"]) .tag--primary {
+    background: rgba(0, 151, 178, 0.08);
+    border-color: rgba(0, 151, 178, 0.3);
+  }
+</style>
