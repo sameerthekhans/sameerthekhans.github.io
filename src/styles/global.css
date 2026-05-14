@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface-2: #161616;
+  --text: #f0f0f0;
+  --muted: #666666;
+  --muted-text: #999999;
+  --border: #1e1e1e;
+  --border-hover: #2e2e2e;
+  --accent: #00e5ff;
+  --radius: 16px;
+  --nav-bg: rgba(10, 10, 10, 0.85);
+  --card-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+  --bg: #f5f5f5;
+  --surface: #ffffff;
+  --surface-2: #efefef;
+  --text: #0d0d0d;
+  --muted: #888888;
+  --muted-text: #5a5a5a;
+  --border: #e4e4e4;
+  --border-hover: #d0d0d0;
+  --accent: #0097b2;
+  --nav-bg: rgba(245, 245, 245, 0.9);
+  --card-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
