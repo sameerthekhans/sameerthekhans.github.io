@@ -2,17 +2,17 @@
 ---
 <div class="card card--stats">
   <div class="stat">
-    <p class="stat-number"><span class="stat-count" data-target="9">0</span>+</p>
+    <p class="stat-number">9+</p>
     <p class="stat-label">Years Experience</p>
   </div>
   <div class="stat-divider"></div>
   <div class="stat">
-    <p class="stat-number"><span class="stat-count" data-target="15">0</span></p>
+    <p class="stat-number">15</p>
     <p class="stat-label">Team Members Led</p>
   </div>
   <div class="stat-divider"></div>
   <div class="stat">
-    <p class="stat-number"><span class="stat-count" data-target="5">0</span>K+</p>
+    <p class="stat-number">5K+</p>
     <p class="stat-label">Stack Overflow Reps</p>
   </div>
 </div>
@@ -60,29 +60,3 @@
     .stat-divider { display: none; }
   }
 </style>
-
-<script>
-  import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  document.querySelectorAll<HTMLElement>(".stat-count").forEach((el) => {
-    const target = parseInt(el.dataset.target ?? "0", 10);
-    ScrollTrigger.create({
-      trigger: el,
-      start: "top 85%",
-      once: true,
-      onEnter: () => {
-        gsap.to({ val: 0 }, {
-          val: target,
-          duration: 1.5,
-          ease: "power2.out",
-          onUpdate() {
-            el.textContent = String(Math.round((this as any).targets()[0].val));
-          },
-        });
-      },
-    });
-  });
-</script>
