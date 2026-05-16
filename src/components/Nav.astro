@@ -1,7 +1,7 @@
 ---
 ---
 <header class="nav">
-  <a href="/" class="nav-logo">SK</a>
+  <a href="/" class="nav-logo"><img src="/sameer-logo-xs.png" alt="Sameer Khan" class="nav-logo-img" /></a>
   <nav class="nav-links" aria-label="Primary">
     <a href="#home">Home</a>
     <a href="#experience">Experience</a>
@@ -32,11 +32,14 @@
   }
 
   .nav-logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo-img {
+    height: 32px;
+    width: auto;
+    display: block;
   }
 
   .nav-links {
